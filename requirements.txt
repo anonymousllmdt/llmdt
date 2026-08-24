@@ -1,0 +1,17 @@
+scikit-learn
+trimesh
+wandb
+tqdm
+pandas
+smplx
+einops
+opencv-python
+loguru
+matplotlib
+pyquaternion
+hydra-core
+natsort
+tensorboard
+smplkit
+tabulate
+pyrender
