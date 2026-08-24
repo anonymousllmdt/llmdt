@@ -111,10 +111,6 @@ You can now interactively explore the generated results in the Wis3D viewer.
 
 Download the **ScanNet v2** dataset.
 
-- `*_vh_clean_2.ply`
-- `*_vh_clean.aggregation.json`
-- `*_vh_clean_2*segs.json`
-
 Create a symbolic link to the ScanNet dataset directory:
 
 ```bash
