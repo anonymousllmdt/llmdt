@@ -1,6 +1,6 @@
 # LLMDT: LLM-Based Dual-Transformer for Scene-Aware Text-Driven 3D Human Motion Generation
 
-<img style="max-width: 100%;" src="https://github.com/swerizwan/llmdt/blob/main/resources/wax.png" alt="VERHM Overview">
+<img style="max-width: 100%;" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/wax.png" alt="VERHM Overview">
 
 ## Overview
 
@@ -10,7 +10,7 @@ We propose LLMDT, an LLM-based dual-transformer framework for text-driven 3D hum
 
 This section presents the proposed LLM-Based Dual-Transformer (LLMDT) framework for scene-aware text-driven 3D human motion generation. The framework first employs an LLM to extract structured semantic information and ground interaction-relevant objects within the 3D scene. An object-centric representation is then constructed to encode local geometric context, followed by a trajectory transformer that predicts collision-free navigation paths. A trajectory sensor captures dynamic scene occupancy along the predicted path, while a pose-aware dual transformer generates realistic and temporally consistent human motions through hierarchical coarse-to-fine motion refinement.
 
-<img style="max-width: 100%;" src="https://github.com/swerizwan/llmdt/blob/main/resources/overview.png" alt="llmdt Overview">
+<img style="max-width: 100%;" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/overview.png" alt="llmdt Overview">
 
 ## Installation
 
@@ -52,55 +52,55 @@ You can now interactively explore the generated results in the Wis3D viewer.
   <tr>
     <td style="text-align: center;">
       <p>Lie on the bed.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/1.gif" alt="8">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/1.gif" alt="8">
     </td>
     <td style="text-align: center;">
       <p>Sit on the toilet.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/2.gif" alt="787">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/2.gif" alt="787">
     </td>
     <td style="text-align: center;">
       <p>Sit on the chair.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/3.gif" alt="825">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/3.gif" alt="825">
     </td>
       <td style="text-align: center;">
       <p>Sit on the sofa chair that is far away from the tv.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/4.gif" alt="843">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/4.gif" alt="843">
     </td>
   </tr>
     <tr>
     <td style="text-align: center;">
       <p>Stand up from the couch that is far from the table.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/5.gif" alt="1446">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/5.gif" alt="1446">
     </td>
     <td style="text-align: center;">
       <p>Stand up from the toilet.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/6.gif" alt="1599">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/6.gif" alt="1599">
     </td>
     <td style="text-align: center;">
       <p>Stand up from the bed.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/7.gif" alt="1674">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/7.gif" alt="1674">
     </td>
     <td style="text-align: center;">
       <p>Stand up from the armchair that is farthest from the shelf.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/8.gif" alt="1699">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/8.gif" alt="1699">
     </td>
   </tr>
   <tr>
     <td style="text-align: center;">
       <p>Walk to the chair that is in the center of the cabinet and the whiteboard.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/9.gif" alt="1856">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/9.gif" alt="1856">
     </td>
     <td style="text-align: center;">
       <p>Stand up from the chair that is far away from the door.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/10.gif" alt="1799">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/10.gif" alt="1799">
     </td>
     <td style="text-align: center;">
       <p>Walk to the chair that is far from the cabinets.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/11.gif" alt="1899">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/11.gif" alt="1899">
     </td>
     <td style="text-align: center;">
       <p>Sit on the chair that is near the ottoman.</p>
-      <img width="165" src="https://github.com/swerizwan/llmdt/blob/main/resources/12.gif" alt="699">
+      <img width="165" src="https://github.com/anonymousllmdt/llmdt/blob/main/resources/12.gif" alt="699">
     </td>
   </tr>
 </table>
