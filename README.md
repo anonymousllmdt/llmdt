@@ -141,16 +141,6 @@ mkdir -p data
 ln -s /path/to/humanise data/HUMANISE
 ```
 
-### AMASS Dataset
-
-Please follow the preprocessing pipeline provided by **HUMOR** to download and preprocess the AMASS dataset.
-
-After preprocessing, create a symbolic link:
-
-```bash
-ln -s /path/to/amass_processed data/amass_preprocess
-```
-
 ### SMPL-X Models
 
 Download the **SMPL-X** models.
@@ -170,39 +160,6 @@ data/
 │   └── smplx/
 ```
 
-## Training on the AMASS Dataset
-
-The models are trained on the AMASS dataset to learn general human motion and trajectory priors.
-
-### Train the Trajectory Model
-
-We trained the trajectory model as initialization:
-
-```bash
-python train.py -c configs/train/trajgen/traj_amass.yaml task amass_traj
-```
-
-### Train the Motion Model
-
-We trained the motion model as initialization:
-
-```bash
-python train.py -c configs/train/motiongen/motion_amass.yaml task amass_motion
-```
-
-The training logs, checkpoints, and generated models will be saved under:
-
-```text
-checkpoints/train/
-```
-
-After successful training, the pretrained models will be available at:
-
-```text
-checkpoints/train/amass_traj/model
-checkpoints/train/amass_motion/model
-```
-
 ## Training on the HUMANISE Dataset
 
 The models are trained on the HUMANISE dataset for scene-aware motion generation.
@@ -216,7 +173,7 @@ python train.py \
     -c configs/train/trajgen/traj_humanise.yaml \
     task humanise_traj \
     resume True \
-    resume_model_dir out/train/amass_traj/model
+    resume_model_dir out/train/humanise_traj/model
 ```
 
 ### Train the Motion Model
@@ -228,7 +185,7 @@ python train.py \
     -c configs/train/motiongen/motion_humanise.yaml \
     task humanise_motion \
     resume True \
-    resume_model_dir out/train/amass_motion/model
+    resume_model_dir out/train/humanise_motion/model
 ```
 
 The training logs, checkpoints, and generated models will be saved under:
@@ -240,6 +197,6 @@ checkpoints/train/
 After successful training, the pretrained models will be available at:
 
 ```text
-checkpoints/train/amass_traj/model
-checkpoints/train/amass_motion/model
+checkpoints/train/humanise_traj/model
+checkpoints/train/humanise_motion/model
 ```
